@@ -7,7 +7,7 @@ The "samples" folder contains a sample DITA Map showing how a topic can have a c
 
 Copyright and License
 ---------------------
-Copyright 2018 Syncro Soft SRL.
+Copyright 2019 Syncro Soft SRL.
 
 This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/dita-json/blob/master/LICENSE)
 
