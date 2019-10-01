@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="sample_topic">
+    <title>Sample topic</title>
+    <body>
+        <p>The <ph keyref="uiStrings/save_button"/> can be used to save the content.</p>
+    </body>
+</topic>

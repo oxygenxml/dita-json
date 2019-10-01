@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.oxygenxml.json.dita">
+  <feature extension="dita.conductor.lib.import" file="lib/jsonDita.jar"/>
+  <feature extension="dita.conductor.lib.import" file="lib/json.jar"/>
+  <feature extension="dita.parser">
+    <parser format="excel" class="com.oxygenxml.json.dita.JSONReader"/>
+  </feature>
+</plugin>

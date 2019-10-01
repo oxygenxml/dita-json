@@ -1,0 +1,7 @@
+<project basedir="." name="" default="dist">
+  <target name="dist">
+  	<jar destfile="lib/excelDita.jar">
+  		<fileset dir="classes/"/>
+  	</jar>
+  </target>
+</project>
