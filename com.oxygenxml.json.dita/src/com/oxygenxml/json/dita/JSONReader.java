@@ -114,7 +114,6 @@ public class JSONReader implements XMLReader {
 			}
 			is = urlForConnect.openStream();
 		}
-		JSONObject obj = new JSONObject();
 		//Read the content.
 		StringBuilder contentBuilder = new StringBuilder();
 		InputStreamReader reader = null;
@@ -133,16 +132,14 @@ public class JSONReader implements XMLReader {
 		}
 		
 
+		JSONObject obj = new JSONObject(contentBuilder.toString());
 		String xmlString = XML.toString(obj, "JSON");
-		System.err.println("XML STRING " + xmlString);
 		//Delegate to content handler.
 		SAXResult result = new SAXResult(handler);
 		try {
 			TransformerFactory factory = TransformerFactory.newInstance();
 			factory.setURIResolver(CatalogUtils.getCatalogResolver());
 			Source resolved = CatalogUtils.getCatalogResolver().resolve("plugin:com.oxygenxml.json.dita:" + "/resources/json-to-dita.xsl", new File(".").toURI().toURL().toString());
-			
-			System.err.println("RESOLVED " + (resolved != null ? resolved.getSystemId() : null));
 			if(resolved != null) {
 				Transformer newTransformer = factory.newTransformer(resolved);
 				newTransformer.transform(new StreamSource(new StringReader(xmlString), url.toString()),

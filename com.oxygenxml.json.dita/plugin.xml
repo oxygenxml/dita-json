@@ -3,6 +3,6 @@
   <feature extension="dita.conductor.lib.import" file="lib/jsonDita.jar"/>
   <feature extension="dita.conductor.lib.import" file="lib/json.jar"/>
   <feature extension="dita.parser">
-    <parser format="excel" class="com.oxygenxml.json.dita.JSONReader"/>
+    <parser format="json" class="com.oxygenxml.json.dita.JSONReader"/>
   </feature>
 </plugin>
