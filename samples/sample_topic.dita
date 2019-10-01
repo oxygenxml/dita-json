@@ -3,6 +3,6 @@
 <topic id="sample_topic">
     <title>Sample topic</title>
     <body>
-        <p>The <ph keyref="uiStrings/save_button"/> can be used to save the content.</p>
+        <p>The <ph conkeyref="uiStrings/save_button"/> button can be used to save the content.</p>
     </body>
 </topic>
