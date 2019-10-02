@@ -109,7 +109,7 @@ public class JSONReader implements XMLReader {
 				String urlStr = urlForConnect.toString();
 				if(urlStr.contains("?")) {
 					//Remove query part
-					urlForConnect = new URL(urlStr.substring(0, urlStr.indexOf("?")));
+					urlForConnect = new URL(urlStr.substring(0, urlStr.indexOf('?')));
 				}
 			}
 			is = urlForConnect.openStream();

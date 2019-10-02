@@ -1,4 +1,4 @@
-# dita-excel
+# dita-json
 Dynamically converts to reusable DITA topics JSON files referenced with format="json" in DITA Maps.
 
 The converted DITA topic contains inside for each JSON key a phrase with the ID being the key value and the text being the key content.
