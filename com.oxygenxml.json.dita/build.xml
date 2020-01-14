@@ -1,9 +1,7 @@
-<project basedir="." name="" default="dist">
+<project basedir="." name="CreateJsonDitaJar" default="dist">
   <target name="dist">
   	<jar destfile="lib/jsonDita.jar">
   		<fileset dir="classes/"/>
   	</jar>
-  <target name="test">
-  </target>
   </target>
 </project>
