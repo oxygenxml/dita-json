@@ -3,7 +3,7 @@
   	<jar destfile="lib/jsonDita.jar">
   		<fileset dir="classes/"/>
   	</jar>
-  </target name="test">
-  <target>
+  <target name="test">
+  </target>
   </target>
 </project>
