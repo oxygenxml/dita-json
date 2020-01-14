@@ -3,12 +3,15 @@ sudo: required
 dist: trusty
 jdk:
  - oraclejdk8
-jdk:
- - oraclejdk8
 matrix:
   fast_finish: true
 install: true
+
+before_script:
+   - cd com.oxygenxml.json.dita
+
 before_deploy:
+ - cd ../
  - zip -r dita-json-${TRAVIS_TAG}-plugin.zip com.oxygenxml.json.dita
 deploy:
   provider: releases
