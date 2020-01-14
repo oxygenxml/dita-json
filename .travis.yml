@@ -10,6 +10,9 @@ install: true
 before_script:
    - cd com.oxygenxml.json.dita
 
+script:
+ - ant
+
 before_deploy:
  - cd ../
  - zip -r dita-json-${TRAVIS_TAG}-plugin.zip com.oxygenxml.json.dita
