@@ -5,6 +5,11 @@ The converted DITA topic contains inside for each JSON key a phrase with the ID 
 
 The "samples" folder contains a sample DITA Map showing how a topic can have a conref to a phrase directly from the JSON topic.
 
+## Installation
+
+Install the **dita-json** plugin in the DITA Open Toolkit: 
+[https://www.dita-ot.org/dev/topics/plugins-installing.html](https://www.dita-ot.org/dev/topics/plugins-installing.html)
+
 Copyright and License
 ---------------------
 Copyright 2019 Syncro Soft SRL.
