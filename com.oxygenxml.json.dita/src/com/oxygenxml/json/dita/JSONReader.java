@@ -131,7 +131,6 @@ public class JSONReader implements XMLReader {
 			}
 		}
 		
-
 		JSONObject obj = new JSONObject(contentBuilder.toString());
 		String xmlString = XML.toString(obj, "JSON");
 		//Delegate to content handler.
@@ -139,7 +138,8 @@ public class JSONReader implements XMLReader {
 		try {
 			TransformerFactory factory = TransformerFactory.newInstance();
 			factory.setURIResolver(CatalogUtils.getCatalogResolver());
-			Source resolved = CatalogUtils.getCatalogResolver().resolve("plugin:com.oxygenxml.json.dita:" + "/resources/json-to-dita.xsl", new File(".").toURI().toURL().toString());
+			String res = "plugin:com.oxygenxml.json.dita:" + "resources/json-to-dita.xsl";
+			Source resolved = CatalogUtils.getCatalogResolver().resolve(res, null);
 			if(resolved != null) {
 				Transformer newTransformer = factory.newTransformer(resolved);
 				newTransformer.transform(new StreamSource(new StringReader(xmlString), url.toString()),
